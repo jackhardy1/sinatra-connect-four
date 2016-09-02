@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Connect Four</title>
+  </head>
+  <body>
+    <h1> Welcome to Connect Four! </h1>
+
+    <% if @win %>
+
+    <p> Player <%= @current_player %> wins! </p>
+    <a href="/"> Click to start again </a>
+
+    <% else %>
+
+      <p> Player <%= @current_player %>'s turn!  </p>
+      <p> Please select your slot </p>
+
+      <form action="/play" method="POST">
+        <input type="text" name="row">
+      	<input type="submit" name="button">
+      </form>
+
+      <% @grid.each do |row| %>
+        <p> => <%= row.join(" | ") %> </p>
+      <% end %>
+
+    <% end %>
+  </body>
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Connect Four</title>
+  </head>
+  <body>
+    <h1> Welcome to Connect Four! </h1>
+    <%= @grid %>
+
+    <p> Please select grid size!  </p>
+
+    <form action="/" method="POST">
+      <input type="text" name="rows" placeholder="rows">
+      <input type="text" name="columns" placeholder="columns">
+    	<input type="submit" name="button" >
+    </form>
+
+  </body>
+</html>
