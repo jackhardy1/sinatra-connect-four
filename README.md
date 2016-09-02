@@ -1,7 +1,19 @@
-Classes
-- Grid
-- Player
-- Game
+Instructions for use:
+
+```
+git clone git@github.com:jackhardy1/sinatra-connect-four.git
+bundle install
+```
+To run tests:
+```
+rspec
+```
+To run the application / interface:
+```
+ruby app.rb
+```
+Visit http://localhost:4567
+
 
 # Connect4
 
